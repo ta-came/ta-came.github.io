@@ -1,0 +1,40 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif; /* Police d’écriture */
+  background-color: #f5b26b; /* Couleur de fond */
+  color: #000000; /* Couleur du texte */
+  text-align: left; /* Aligne le texte à gauche */
+  margin-left: 2cm; /* Supprime les marges */
+  padding: 0; /* Supprime les espacements */
+}
+
+header {
+  background-color: white; /* Couleur de fond */
+  color: rgb(195, 92, 7); /* Couleur du texte */
+  text-align: left; /* Aligne le texte à gauche */
+  padding: 20px; /* Espacement interne */
+  transform: scale(1.1); /* Pour aligner le header avec la page */
+}
+
+footer {
+  background-color: rgb(255, 255, 255);
+  color: rgb(185, 85, 4);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+h1 {
+  color: rgb(92, 42, 1);
+  font-size: 36px; /* Taille du texte */
+  margin-bottom: 10px; /* Espacement du bas */
+  text-shadow: 2px 2px 5px rgb(255, 115, 0); /* Ombre du texte */
+}
+
+a {
+  color: rgb(172, 81, 6); /* Change la couleur des url */
+}
+
+#aimerleschats {
+  /* Réponse en très grand et en gras */
+  font-weight: bold;
+  font-size: 40px;
+}

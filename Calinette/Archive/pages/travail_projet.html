@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+
+<!-- head avec boostrap, lien vers le css, titre et favicon -->
+
+<head>
+	<meta charset= "utf-8">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../style/stylepage.CSS" />
+	<title> Caline </title>
+		<link rel="icon" type="image/png" href="../images/favicon.ico">
+</head>
+
+<!-- body avec header, footer et paragraphes de ma page -->
+<body>
+	<!-- header avec du style , un logo,  le titre et les ancres vers les différentes sections de ma page  -->
+	<header>
+		<div class ="header-bar">
+			<img src="../images/logo.jpg" alt="Logo" style="height: 100px; vertical-align: middle;">
+			<nav style="display: inline-block; margin-left: 20px;">
+				<h1> Calinette </h1>
+				<a href="../Index.html">Accueil</a>
+				<a href="../pages/CV.pdf">CV de ma maitresse</a>
+				<a href="#présentation">Présentation</a>
+				<a href="#histoire">Histoire</a>
+				<a href="#quizz">Quizz</a>
+			</nav>
+		</div>
+	</header>
+
+	<!-- section du début avec image  -->
+	<section>
+	</br>
+	</br>
+		<h2> Coucou, je m'appelle Caline et je suis le chat le plus poilu et calin du monde ! </h2>
+		<p id = "img1">
+			Une photo de moi : <br />
+			<img src="../images/caline1.jpg" height="160" width="160" alt="Photo de Caline" />
+		</p>
+	</section>
+
+	</br>
+	</br>
+	</br>
+	<hr/>
+
+	<!-- section 2 avec la présentation de Caline, de Camille , des tableaux, des images  -->
+	<section>
+		<h2 id="présentation"> Présentation </h2>
+		<div class= "img2">
+		<img src="../images/caline2.jpg" height="160" width="160" alt="Photo de Caline 2" />
+		<p>
+			Je suis un chat de goutière blanc et roux.
+		</br>Je bave un peu mais je suis mignonne.
+		</p>
+		</div>
+
+		<!-- tableau 1 pour caline  -->
+		<table>
+			<tr>
+				<th Colspan="2">infos perso</th>
+			</tr>
+			<tr> 
+				<td>âge : </td>
+				<td>11 ans</td>
+			</tr>
+			<tr> 
+				<td>poids : </td>
+				<td>plume</td>
+			</tr>
+				<tr> 
+				<td>caractéristiques : </td>
+				<td>poil soyeux, mange de la pate à pain, emmerde les mioches</td>
+			</tr>
+		</table>
+
+		<div class= "img2">
+		<img src="../images/calinecombat.jpg" height="160" width="160" alt="Photo de Caline en formation combat" />
+		<p>
+			En plein combat contre un chaton qui m'a provoqué. 
+		</p>
+		</div>
+
+		</br>
+		</br>
+		</br>
+		</br>
+		<h3> Quelques infos sur ma maîtresse </h3>
+		<div class= "img3">
+			<img src="../images/calineetcamille.jpg" height="160" width="160" alt="Photo de Caline et Camille" />
+		</div>	
+		
+		<p>	
+		<!-- tableau 2 pour Camille  -->	
+		<table>
+				<tr>
+					<th Colspan="2">infos perso</th>
+				</tr>
+				<tr>
+					<td>prénom : </td>
+					<td>Camille</td>
+				</tr>
+				<tr>
+					<td>âge : </td>
+					<td>20 ans (elle est vieille)</td>
+				</tr>
+				<tr>
+					<td>CV : </td>
+					<td><a href="../pages/CV.pdf"> CV de Camille </a></td>
+				</tr>
+				<tr>
+					<td>caractéristiques : </td>
+					<td>folle, susceptible, veut toujours me faire des calins</td>
+				</tr>
+		</table>
+		</p>	
+		
+		
+	</section>
+
+	</br>
+	<hr/>
+
+	<!-- section 3 avec l'histoire de Caline, des images et lien vers page wikipedia des chats -->
+	<section>
+		<h2 id="histoire"> Mon histoire </h2>
+	<div class= "img3">
+		</br><img src="../images/calineptt.jpg" height="160" width="160" alt="Photo de Caline petite" />
+		<p>
+			Je suis née dans la maison voisine le 15 décembre 2012 avant d'être adoptée 2 mois plus tard par ma famille. 
+			</br>On m'a appelé Caline mais ma maitresse Camille voulait m'appeler Tartine (personne n'était d'accord avec elle...)
+			</br>J'ai vécu nourris exclusivement de pate à pain comme je suis arrivée en même temps que la création de la boulangerie familiale. 
+		</p>
+		</br><img src="../images/calineboulang.jpg" height="160" width="160" alt="Photo de Caline devant le four" />
+	</div>
+
+		</br>
+		<div class= "img3">
+			<img src="../images/calineetcarou.jpg" height="160" width="160" alt="Photo de Caline et Carou" />
+			<p>J'ai été maman en 2014 et j'ai donné naissance à 6 chatons avec mon amoureux Carou, l'autre chat de la famille.</p>
+		</div>
+
+		</br>
+		<div class= "img3">
+			<img src="../images/hiphop.jpg" height="160" width="160" alt="Photo de Caline qui fait du hiphop" />
+			<p>Je continue ma vie toujours dans la maison familiale et tout le monde s'occupe de moi ! 
+			</br>(je fais également du hiphop) </p>
+			<img src="../images/calineetcamille2.jpg" height="160" width="160" alt="Photo de Caline vieille" />
+		</div>
+		
+	</br> <a href="https://fr.wikipedia.org/wiki/Chat"> Pour en savoir plus sur les chats </a>
+	</section>
+
+	</br>
+	</br>
+	<hr/>
+
+	<!-- section 4 avec le quizz et le renvoie vers une page formulairereponse grâce à la méthode get  -->
+	<section>
+		<h2 id="quizz"> Quizz !! </h2>
+		<form action="formulairereponse.html" method="get">
+		<fieldset>
+			<legend>En général</legend>
+			<label>Est ce que vous aimez les chats ? </label>
+			<input type = "text" name = "aimerleschats"/> 
+			<br/> <label>Pourquoi ? </label>
+			<input type = "text" name = "pourquoi"/> 
+			<br/> <label>Combien avez vous eu de chats ?</label>
+			<input type = "number" name = "nombrechat"/> 
+		
+		</fieldset>
+		
+		<fieldset>
+			<legend>Si vous avez bien lu</legend>
+			<label>Comment j'ai faillit m'appeler ? </label>
+			<input type = "text" name = "nom"/> 
+			<br/> <label>De quoi suis-je nourri ? </label>
+			<input type = "text" name = "nourriture"/> 
+			<br/> <label>Comment s'appelle mon amoureux ?</label>
+			<input type = "text" name = "amoureux"/> 
+			<br/> <label>Combien j'ai eu de chatons?</label>
+			3 <input type = "radio" name = "chatons"/>  7 <input type = "radio" name = "chatons"/>  6 <input type = "radio" name = "chatons"/> 
+			<br/> <input type = "submit"/>
+		</fieldset>
+	</section>
+
+	</br>
+	</br>
+	</br>
+
+	<!-- bas de page-->
+	<footer>
+		<p> ======  Camille Vignes  ====== </p>
+		<p>Ecole Nationale Supérieure de Cognitique</p>
+		<p>Groupe 1</p>
+		<p>Merci M. Placin</p>	
+	</footer>
+
+</body>
+</html> 

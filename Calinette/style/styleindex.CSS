@@ -1,0 +1,11 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif; /* Police d’écriture */
+  text-align: center;
+  margin-left: 2cm; /* Marge de 2cm */
+  padding: 0; /* Supprime les espacements */
+}
+
+header {
+  color: rgb(77, 42, 165);
+  background-color: #f8ebb4;
+}
