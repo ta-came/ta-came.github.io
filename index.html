@@ -1,10 +1,389 @@
-<html lang="fr"></html>
+<!DOCTYPE html>
+<html lang="fr">
+
+
 <head>
-    <meta charset="UTF-8">
-    <title>Mon Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camille Vignes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
+
 <body>
-    <h1>Bonjour, bienvenue sur mon portfolio !</h1>
-    <p>Site en cours de construction.</p>
+
+  <!-- Custom cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ─── NAV ─── -->
+  <nav>
+    <a href="#hero" class="nav-logo">ta-came</a>
+    <ul class="nav-links">
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#competences">Compétences</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section id="hero">
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+    <div class="hero-blob blob-3"></div>
+
+    <span class="hero-eyebrow">
+      <span class="eyebrow-dot"></span>
+      Disponible pour de nouveaux projets
+    </span>
+
+    <h1 class="hero-title">
+      <span class="line-colored">UI/UX Designer</span><br>
+      <span class="line-outline">qui donne vie</span><br>
+      <span>à vos idées.</span>
+    </h1>
+
+    <p class="hero-sub">
+      Je transforme des problèmes complexes en expériences digitales claires, belles et mémorables — pixel par pixel.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#projets" class="btn btn-primary">Voir mes projets ↓</a>
+      <a href="#contact" class="btn btn-ghost">Travailler ensemble →</a>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>scroll</span>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="about-grid">
+
+        <div class="about-visual">
+          <div class="about-avatar-ring">
+            <div class="about-avatar-inner">TC</div>
+          </div>
+          <div class="about-badge badge-1">
+            <span class="badge-icon">🎨</span>
+            <span>Figma Expert</span>
+          </div>
+          <div class="about-badge badge-2">
+            <span class="badge-icon">✨</span>
+            <span>Design Systems</span>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <span class="section-tag">À propos</span>
+          <h2 class="section-title">Bonjour, je suis Ta-Came</h2>
+          <p>UI/UX Designer passionné par la création d'interfaces qui <strong>ont du sens</strong>. Je crois que le bon design, c'est invisible : il guide naturellement l'utilisateur vers ce qu'il cherche.</p>
+          <p>Mon approche mêle <strong>rigueur stratégique</strong> et <strong>sensibilité visuelle</strong>. Chaque projet commence par comprendre les utilisateurs, et se termine quand l'expérience est vraiment fluide.</p>
+          <div class="about-stats">
+            <div>
+              <div class="stat-num">12+</div>
+              <div class="stat-label">Projets livrés</div>
+            </div>
+            <div>
+              <div class="stat-num">3 ans</div>
+              <div class="stat-label">d'expérience</div>
+            </div>
+            <div>
+              <div class="stat-num">100%</div>
+              <div class="stat-label">Clients satisfaits</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJETS ─── -->
+  <section id="projets">
+    <div class="section-inner">
+      <span class="section-tag">Projets</span>
+      <h2 class="section-title">Mes réalisations</h2>
+
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #1a0a2e, #2d1060);">
+            <div class="project-thumb-bg" style="background: radial-gradient(ellipse at 30% 50%, rgba(168,85,247,.5), transparent 60%);"></div>
+            <span style="font-size:5rem; z-index:1;">🛍️</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-violet">E-commerce</span>
+              <span class="tag tag-pink">UX Research</span>
+              <span class="tag tag-cyan">Design System</span>
+            </div>
+            <div class="project-title">Refonte App Shopping — Expérience d'achat repensée de A à Z</div>
+            <p class="project-desc">Recherche utilisateurs, wireframes, prototype Figma haute fidélité et tests d'utilisabilité. Résultat : +34 % de conversion.</p>
+            <a href="#" class="project-link">Voir le projet →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #0a1f2e, #063050);">
+            <span style="font-size:4rem; z-index:1;">📊</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-cyan">Dashboard</span>
+              <span class="tag tag-lime">B2B</span>
+            </div>
+            <div class="project-title">Dashboard Analytics SaaS</div>
+            <p class="project-desc">Interface de visualisation de données complexes, rendue simple et lisible.</p>
+            <a href="#" class="project-link">Voir →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #2e0a1a, #600325);">
+            <span style="font-size:4rem; z-index:1;">🏃</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-pink">Mobile</span>
+              <span class="tag tag-orange">Sport</span>
+            </div>
+            <div class="project-title">App Fitness & Bien-être</div>
+            <p class="project-desc">Design d'une app mobile motivante et accessible pour le suivi sportif quotidien.</p>
+            <a href="#" class="project-link">Voir →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #0a1a0f, #062a12);">
+            <span style="font-size:4rem; z-index:1;">🌿</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-lime">Branding</span>
+              <span class="tag tag-cyan">Web Design</span>
+            </div>
+            <div class="project-title">Identité Marque Éco-responsable</div>
+            <p class="project-desc">Charte graphique, design system et landing page pour une startup green.</p>
+            <a href="#" class="project-link">Voir →</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #1a150a, #2e2306);">
+            <span style="font-size:4rem; z-index:1;">🎵</span>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="tag tag-orange">Musique</span>
+              <span class="tag tag-violet">App Web</span>
+            </div>
+            <div class="project-title">Plateforme de Streaming Musical</div>
+            <p class="project-desc">Refonte UX d'une plateforme musicale indépendante axée sur la découverte.</p>
+            <a href="#" class="project-link">Voir →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── COMPÉTENCES ─── -->
+  <section id="competences">
+    <div class="section-inner">
+      <span class="section-tag">Compétences</span>
+      <h2 class="section-title">Mon expertise</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon skill-icon-pink">🎨</div>
+          <div class="skill-name">Design UI</div>
+          <p class="skill-desc">Interfaces belles, cohérentes et pixel-perfect. Je construis des design systems qui tiennent dans la durée.</p>
+          <div class="skill-pills">
+            <span class="skill-pill">Figma</span>
+            <span class="skill-pill">Design Tokens</span>
+            <span class="skill-pill">Auto Layout</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon skill-icon-violet">🔍</div>
+          <div class="skill-name">UX Research</div>
+          <p class="skill-desc">Interviews utilisateurs, tests d'utilisabilité, heatmaps. Les décisions de design s'appuient sur des données réelles.</p>
+          <div class="skill-pills">
+            <span class="skill-pill">User Testing</span>
+            <span class="skill-pill">Personas</span>
+            <span class="skill-pill">Journey Mapping</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon skill-icon-cyan">⚡</div>
+          <div class="skill-name">Prototypage</div>
+          <p class="skill-desc">Prototypes interactifs haute fidélité pour valider rapidement avant de coder.</p>
+          <div class="skill-pills">
+            <span class="skill-pill">Figma Prototype</span>
+            <span class="skill-pill">Micro-interactions</span>
+            <span class="skill-pill">Animations</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon skill-icon-lime">💻</div>
+          <div class="skill-name">Front-end</div>
+          <p class="skill-desc">Assez de code pour parler la même langue que les développeurs et implémenter mes propres maquettes.</p>
+          <div class="skill-pills">
+            <span class="skill-pill">HTML / CSS</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">Framer</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CV ─── -->
+  <section id="cv">
+    <div class="section-inner">
+      <span class="section-tag">CV</span>
+      <h2 class="section-title">Mon curriculum vitæ</h2>
+
+      <div class="cv-box">
+        <div class="cv-icon-wrap">📄</div>
+        <div class="cv-text">
+          <h2>Télécharger mon CV</h2>
+          <p>Retrouvez mon parcours complet, mes expériences et mes formations dans mon CV au format PDF, prêt à imprimer.</p>
+          <br>
+          <a href="cv.pdf" download class="btn btn-primary" style="width:fit-content">Télécharger le PDF ↓</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section id="contact">
+    <div class="section-inner">
+      <span class="section-tag">Contact</span>
+      <h2 class="section-title">Travaillons ensemble</h2>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Un projet en tête ?</h3>
+          <p>Je suis disponible pour des missions freelance, des collaborations et des opportunités à temps plein. N'hésite pas à me contacter !</p>
+
+          <div class="contact-links">
+            <a href="mailto:contact@ta-came.github.io" class="contact-link">
+              <div class="contact-link-icon link-icon-pink">📧</div>
+              contact@ta-came.github.io
+            </a>
+            <a href="https://linkedin.com/in/ta-came" target="_blank" class="contact-link">
+              <div class="contact-link-icon link-icon-violet">💼</div>
+              LinkedIn — Ta-Came
+            </a>
+            <a href="https://dribbble.com/ta-came" target="_blank" class="contact-link">
+              <div class="contact-link-icon link-icon-cyan">🏀</div>
+              Dribbble — Ta-Came
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label>Nom complet</label>
+            <input type="text" placeholder="Jean Dupont" />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="jean@exemple.fr" />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea placeholder="Parle-moi de ton projet…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:fit-content; cursor:none">
+            Envoyer le message ✉️
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer>
+    <span class="footer-logo">ta-came</span>
+    <p>Fait avec ❤️ — 2025</p>
+    <p>UI/UX Designer</p>
+  </footer>
+
+  <!-- ─── JS ─── -->
+  <script>
+    /* Cursor */
+    const dot  = document.getElementById('cursor-dot');
+    const ring = document.getElementById('cursor-ring');
+    let mx = 0, my = 0, rx = 0, ry = 0;
+    window.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+    function animCursor() {
+      rx += (mx - rx) * .12;
+      ry += (my - ry) * .12;
+      dot.style.left  = mx + 'px';
+      dot.style.top   = my + 'px';
+      ring.style.left = rx + 'px';
+      ring.style.top  = ry + 'px';
+      requestAnimationFrame(animCursor);
+    }
+    animCursor();
+
+    /* Hover grow on links/buttons */
+    document.querySelectorAll('a, button, .project-card').forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        ring.style.width  = '56px';
+        ring.style.height = '56px';
+        ring.style.borderColor = 'rgba(255,95,170,.8)';
+      });
+      el.addEventListener('mouseleave', () => {
+        ring.style.width  = '36px';
+        ring.style.height = '36px';
+        ring.style.borderColor = 'rgba(255,95,170,.5)';
+      });
+    });
+
+    /* Scroll reveal */
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: .12 });
+
+    document.querySelectorAll('.project-card, .skill-card, .about-grid, .cv-box, .contact-grid').forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'opacity .7s ease, transform .7s ease';
+      observer.observe(el);
+    });
+
+    /* Form */
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button');
+      btn.textContent = '✅ Message envoyé !';
+      btn.style.background = 'linear-gradient(135deg, #22d3ee, #a3e635)';
+      setTimeout(() => {
+        btn.textContent = 'Envoyer le message ✉️';
+        btn.style.background = '';
+      }, 3000);
+    }
+  </script>
+
 </body>
 </html>
