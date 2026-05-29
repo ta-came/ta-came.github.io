@@ -11,11 +11,6 @@
 </head>
 <body>
 
-
-  <!-- curseur -->
-  <div id="cursor-dot"></div>
-  <div id="cursor-ring"></div>
-
   <!-- navbarre -->
   <nav>
     <a href="#hero" class="nav-logo">Camille Vignes</a>
@@ -221,47 +216,6 @@
     <p>Mai 2026</p>
     <p>Etudiante Ingénieure Cognitique</p>
   </footer>
-
-  <script>
-
-
-    /* Cursor */
-    const dot = document.getElementById('cursor-dot');
-    const ring = document.getElementById('cursor-ring');
-    let mx = 0, my = 0, rx = 0, ry = 0;
-    window.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
-    (function animCursor() {
-      rx += (mx - rx) * .12; ry += (my - ry) * .12;
-      dot.style.left = mx + 'px'; dot.style.top = my + 'px';
-      ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
-      requestAnimationFrame(animCursor);
-    })();
-    document.querySelectorAll('a, button, .project-row').forEach(el => {
-      el.addEventListener('mouseenter', () => { ring.style.width = ring.style.height = '54px'; ring.style.borderColor = '#7D2027'; });
-      el.addEventListener('mouseleave', () => { ring.style.width = ring.style.height = '38px'; ring.style.borderColor = '#CF5527'; });
-    });
-
-    /* Scroll reveal */
-    const obs = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) { e.target.style.opacity = '1'; e.target.style.transform = 'translateY(0)'; }
-      });
-    }, { threshold: .1 });
-    document.querySelectorAll('.skill-card, .project-featured, .project-row, .about-grid, .cv-box, .contact-grid').forEach(el => {
-      el.style.opacity = '0'; el.style.transform = 'translateY(28px)';
-      el.style.transition = 'opacity .65s ease, transform .65s ease';
-      obs.observe(el);
-    });
-
-    /* Form */
-    function handleSubmit(e) {
-      e.preventDefault();
-      const btn = e.target.querySelector('button');
-      btn.textContent = '✅ Envoyé !';
-      btn.style.background = '#6B7A2A';
-      setTimeout(() => { btn.textContent = 'Envoyer ✉️'; btn.style.background = ''; }, 3000);
-    }
-  </script>
 
 </body>
 </html>
