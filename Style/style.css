@@ -174,7 +174,7 @@ nav {
   height: 85%;
   width: auto;
   object-fit: cover;
-  opacity: 0.5;
+  opacity: 0.4;
   z-index: 0;
 }
 
@@ -194,7 +194,7 @@ nav {
   margin-bottom: 3rem;
   z-index: 1;
 }
-.hero-quote em { color: var(--c-sand); font-style: italic; }
+.hero-quote em { color: var(--c-sand); font-style: italic; z-index: 1;}
 
 .hero-tags { display: flex; gap: .6rem; flex-wrap: wrap; z-index: 1; }
 .hero-tag {
@@ -210,6 +210,7 @@ nav {
   background: var(--c-orange);
   border-color: var(--c-orange);
   color: #fff;
+  z-index: 1;
 }
 
 /* ─── SECTION COMMON ───────────────────────────────────────── */
