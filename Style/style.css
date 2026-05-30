@@ -202,14 +202,14 @@ nav {
   letter-spacing: .06em; text-transform: uppercase;
   padding: .4rem .9rem;
   border-radius: var(--radius-pill);
-  border: 1.5px solid rgba(255,255,255,.2);
-  color: rgba(255,255,255,.65);
+  border: 1.5px solid rgba(255,255,255,1);
+  color: #F5F0E8;
   z-index: 1;
 }
 .hero-tag-fill {
   background: var(--c-orange);
   border-color: var(--c-orange);
-  color: #fff;
+  color: #F5F0E8;
   z-index: 1;
 }
 
