@@ -166,6 +166,17 @@ nav {
 .btn-ghost:hover { background: var(--c-ink); color: var(--c-cream); }
 
 /* Right side content */
+
+.hero-photo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 85%;
+  width: auto;
+  object-fit: cover;
+  opacity: 0.15;
+}
+
 .hero-label {
   font-family: var(--font-mono);
   font-size: .7rem; letter-spacing: .12em;
