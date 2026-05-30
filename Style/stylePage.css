@@ -116,8 +116,8 @@
   }
   .proj-image-placeholder span { font-size: 3rem; }
 
-  /* ─── NAV PROJETS ────────────────────────────────────────────── */
-  .proj-nav {
+/* ─── NAV PROJETS ────────────────────────────────────────────── */
+.proj-nav {
     background: var(--c-ink);
     border-top: 2px solid var(--c-ink);
     padding: 3rem 5vw;
