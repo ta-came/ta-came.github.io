@@ -174,7 +174,8 @@ nav {
   height: 85%;
   width: auto;
   object-fit: cover;
-  opacity: 0.6;
+  opacity: 0.5;
+  z-index: 0;
 }
 
 .hero-label {
@@ -182,6 +183,7 @@ nav {
   font-size: .7rem; letter-spacing: .12em;
   color: var(--c-sky); text-transform: uppercase;
   margin-bottom: 1.5rem;
+  z-index: 1;
 }
 .hero-quote {
   font-family: var(--font-body);
@@ -190,10 +192,11 @@ nav {
   line-height: 1.7;
   color: var(--c-cream);
   margin-bottom: 3rem;
+  z-index: 1;
 }
 .hero-quote em { color: var(--c-sand); font-style: italic; }
 
-.hero-tags { display: flex; gap: .6rem; flex-wrap: wrap; }
+.hero-tags { display: flex; gap: .6rem; flex-wrap: wrap; z-index: 1; }
 .hero-tag {
   font-size: .75rem; font-weight: 700;
   letter-spacing: .06em; text-transform: uppercase;
@@ -201,6 +204,7 @@ nav {
   border-radius: var(--radius-pill);
   border: 1.5px solid rgba(255,255,255,.2);
   color: rgba(255,255,255,.65);
+  z-index: 1;
 }
 .hero-tag-fill {
   background: var(--c-orange);
