@@ -117,7 +117,7 @@
   .proj-image-placeholder span { font-size: 3rem; }
 
   /* Nav projets */
-  .proj-nav {
+.proj-nav {
     background: var(--c-ink);
     border-top: 2px solid var(--c-ink);
     display: grid; grid-template-columns: 1fr 1fr;
@@ -126,14 +126,22 @@
     padding: 2.5rem 5vw;
     text-decoration: none; color: var(--c-cream);
     display: flex; flex-direction: column; gap: .4rem;
-    transition: background .2s;
+    transition: background .2s, border-color .2s;
+    border-bottom: 3px solid transparent;
   }
   .proj-nav-item:first-child { border-right: 1px solid rgba(255,255,255,.1); }
-  .proj-nav-item:hover { background: rgba(255,255,255,.05); }
+  .proj-nav-item:hover { 
+    background: var(--c-orange);
+    border-bottom: 3px solid var(--c-red);
+  }
+  .proj-nav-item:hover .proj-nav-dir {
+    color: rgba(255,255,255,.7);
+  }
   .proj-nav-dir {
     font-family: var(--font-mono);
     font-size: .68rem; letter-spacing: .12em;
     text-transform: uppercase; color: rgba(255,255,255,.4);
+    transition: color .2s;
   }
   .proj-nav-name {
     font-family: var(--font-display);
