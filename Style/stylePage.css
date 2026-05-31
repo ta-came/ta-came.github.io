@@ -41,7 +41,7 @@
     color: var(--c-cream);
     margin-bottom: 1.5rem;
   }
-  .proj-hero-tags { display: flex; gap: .6rem; flex-wrap: wrap; }
+  .proj-hero-tags { display: flex; gap: .6rem; white-space: nowrap;; }
   .proj-hero-tag-item {
     font-size: .75rem; font-weight: 700;
     letter-spacing: .06em; text-transform: uppercase;

@@ -1,4 +1,4 @@
-/* ─── RESET & ROOT ─────────────────────────────────────── */
+/* ─── RESET & ROOT ─────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
@@ -196,7 +196,7 @@ nav {
 }
 .hero-quote em { color: var(--c-sand); font-style: italic; z-index: 1;}
 
-.hero-tags { display: flex; gap: .6rem; flex-wrap: wrap; z-index: 0; }
+.hero-tags { display: flex; gap: .6rem; white-space: nowrap;; z-index: 0; }
 .hero-tag {
   font-size: .75rem; font-weight: 700;
   letter-spacing: .06em; text-transform: uppercase;
