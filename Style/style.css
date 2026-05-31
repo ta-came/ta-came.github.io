@@ -206,8 +206,9 @@ nav {
 }
 
 .hero-tag-sep {
-  color: var(--c-sky);
+  color:  #CF5527;
   position: relative;
+  font-size: 1.5rem;
   z-index: 1;
 }
 
