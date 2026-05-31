@@ -43,10 +43,15 @@
   }
   .proj-hero-tags { display: flex; gap: .6rem; flex-wrap: wrap; }
   .proj-hero-tag-item {
-    font-size: .72rem; font-weight: 700; letter-spacing: .06em;
-    text-transform: uppercase;
-    padding: .35rem .85rem; border-radius: var(--radius-pill);
-    color: rgba(255,255,255,0);
+    font-size: .75rem; font-weight: 700;
+    letter-spacing: .06em; text-transform: uppercase;
+    padding: .4rem .9rem;
+    color: #F5F0E8;
+  }
+  .proj-hero-tag-sep {
+    color:  #CF5527 !important;
+    position: relative;
+    font-size: 4 rem !important;
   }
 
   /* Infos rapides */
