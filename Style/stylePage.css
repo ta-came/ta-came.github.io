@@ -41,18 +41,24 @@
     color: var(--c-cream);
     margin-bottom: 1.5rem;
   }
-  .proj-hero-tags { display: flex; gap: .6rem; white-space: nowrap;; }
+  .proj-hero-tags { 
+    display: flex; 
+    gap: 1.5rem; 
+    flex-wrap: wrap;
+    align-items: center;
+    overflow: visible;
+  }
   .proj-hero-tag-item {
     font-size: .75rem; font-weight: 700;
     letter-spacing: .06em; text-transform: uppercase;
     padding: .4rem .9rem;
     color: #F5F0E8;
     z-index: 1;
+    position: relative;
   }
   .proj-hero-tag-sep {
     color: #CF5527 !important;
     position: relative;
-    font-size: 1.5rem !important;
     z-index: 1;
   }
 
