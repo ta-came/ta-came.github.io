@@ -41,24 +41,18 @@
     color: var(--c-cream);
     margin-bottom: 1.5rem;
   }
-  .proj-hero-tags { display: flex; 
-    gap: 1rem; 
-    flex-wrap: nowrap;
-    align-items: center;
-    overflow: hidden;
-  }  
+  .proj-hero-tags { display: flex; gap: .6rem; flex-wrap: wrap; }
   .proj-hero-tag-item {
     font-size: .75rem; font-weight: 700;
     letter-spacing: .06em; text-transform: uppercase;
     padding: .4rem .9rem;
     color: #F5F0E8;
-    z-index: 1
+    z-index: 1;
   }
   .proj-hero-tag-sep {
-    color:  #CF5527 !important;
+    color: #CF5527 !important;
     position: relative;
-    font-size: 2rem !important;
-    z-index: 1
+    z-index: 1;
   }
 
   /* Infos rapides */
