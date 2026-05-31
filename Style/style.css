@@ -205,6 +205,12 @@ nav {
   z-index: 0;
 }
 
+.hero-tag-sep {
+  color: var(--c-sky);
+  position: relative;
+  z-index: 1;
+}
+
 /* ─── SECTION COMMON ───────────────────────────────────────── */
 section { position: relative; }
 .section-inner { max-width: 1140px; margin: 0 auto; padding: 7rem 5vw; }
