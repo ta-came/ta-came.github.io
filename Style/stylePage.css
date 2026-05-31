@@ -47,11 +47,13 @@
     letter-spacing: .06em; text-transform: uppercase;
     padding: .4rem .9rem;
     color: #F5F0E8;
+    z-index: 1
   }
   .proj-hero-tag-sep {
     color:  #CF5527 !important;
     position: relative;
-    font-size: 4 rem !important;
+    font-size: 4rem !important;
+    z-index: 1
   }
 
   /* Infos rapides */
