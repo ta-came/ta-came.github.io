@@ -46,7 +46,6 @@
     font-size: .72rem; font-weight: 700; letter-spacing: .06em;
     text-transform: uppercase;
     padding: .35rem .85rem; border-radius: var(--radius-pill);
-    border: 1.5px solid rgba(255,255,255,.25);
     color: rgba(255,255,255,.65);
   }
 
